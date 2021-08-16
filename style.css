@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/backgroundTinder.jpg);
+}
+
+.form {
+  padding: 10px;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 50px;
+  margin: 25px;
+  background-image: url(../img/backgroundForm.png);
+}
+
+.form input {
+  margin: 20px;
+  padding: 5px;
+}
+
+.form__input--gender {
+  text-align: center;
+  background-color: white;
+  border: 1px solid grey;
+  color: grey;
+  margin: 0 20px;
+}
+
+.form__input--submit {
+  background-color: black;
+  color: white;
+  border-radius: 100px;
+}
+
+.form__input--submit:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.form__input--textarea {
+  margin: 0 20px;
+  resize: none;
+}
+
+.form__input--image {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.logo {
+  width: 40%;
+  height: 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  background-image: url(../img/logoMatchPet.png);
+}
+
+.heart {
+  background-color: red;
+  height: 50px;
+  margin: 0 10px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  left: 60%;
+  top: 15%;
+  width: 50px;
+  -webkit-animation: beat 1s infinite;
+          animation: beat 1s infinite;
+}
+
+.heart:before {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  top: -25px;
+  left: 0;
+}
+
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+  left: 25px;
+  top: 0;
+}
+
+.heart--first {
+  left: 90%;
+  top: 20%;
+}
+
+@-webkit-keyframes beat {
+  0% {
+    -webkit-transform: scale(1) rotate(-45deg);
+            transform: scale(1) rotate(-45deg);
+  }
+  20% {
+    -webkit-transform: scale(1.25) rotate(-45deg);
+            transform: scale(1.25) rotate(-45deg);
+  }
+  40% {
+    -webkit-transform: scale(1.5) rotate(-45deg);
+            transform: scale(1.5) rotate(-45deg);
+  }
+}
+
+@keyframes beat {
+  0% {
+    -webkit-transform: scale(1) rotate(-45deg);
+            transform: scale(1) rotate(-45deg);
+  }
+  20% {
+    -webkit-transform: scale(1.25) rotate(-45deg);
+            transform: scale(1.25) rotate(-45deg);
+  }
+  40% {
+    -webkit-transform: scale(1.5) rotate(-45deg);
+            transform: scale(1.5) rotate(-45deg);
+  }
+}
+
+.body__filter {
+  background-image: url(../img/backgroundpetsWaitingForYou.jpg);
+  background-size: cover;
+}
+
+#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pet__item__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 300px;
+  margin: 10px;
+  height: 370px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+}
+
+.pet__item__image {
+  width: 250px;
+  height: 250px;
+  padding-top: 20px;
+  border-radius: 50px;
+}
+
+.pet__item__information__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 5px;
+}
+
+.pet__item__information__description {
+  text-align: center;
+}
+
+.filter {
+  height: 70px;
+  background-color: #FA6465;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 15px;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter__button {
+  font-size: 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.filter__button:hover {
+  background-color: black;
+  color: white;
+}
+
+select {
+  border: 3px solid coral;
+  font-size: 35px;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+select:hover {
+  border: 3px solid lightseagreen;
+}
+/*# sourceMappingURL=style.css.map */

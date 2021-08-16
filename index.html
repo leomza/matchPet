@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchPet</title>
+    <link rel="stylesheet" href="dist/style.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="logo"></div>
+    <div class="heart"></div>
+    <div class="heart heart--first"></div>
+
+    <form class="form" onsubmit="doingSubmit(event)">
+        <input type="text" name="namePet" placeholder="Your pet´s name" maxlength="35" required>
+
+        <div class="form__input--gender">
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" checked />
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" />
+        </div>
+
+        <input type="number" name="age" placeholder="Your pet´s age (between 0 and 15)" min="0" max="15" required>
+
+        <input type="text" name="city" placeholder="The amazing city where you live" maxlength="35" required>
+
+        <textarea class="form__input--textarea" name="description" rows="5"
+            placeholder="Short description of your incredible pet" maxlength="65" required></textarea>
+
+        <input type="number" name="contactNumber" placeholder="Number where other pets can talk to yours" min="0"
+            required>
+
+        <input type="file" id="image" name="image" onchange="readURL(this);">
+        <img class="form__input--image" id="previewImage" src="img/dogProfile.png">
+
+        <input class="form__input--submit" type="submit" value="Post my lovely pet!">
+    </form>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
+
+
